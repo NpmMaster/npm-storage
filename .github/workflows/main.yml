@@ -1,7 +1,8 @@
 name: "Coffe Release"
 
-on: [release]
-
+on:
+    release:
+      types: [published]
 jobs:
     coffe:
         runs-on: ubuntu-latest
