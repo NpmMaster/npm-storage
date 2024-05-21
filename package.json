@@ -1,5 +1,5 @@
 {
-  "name": "npm-storage",
+  "name": "npm-datastorage",
   "version": "1.0.0",
   "description": "Store your data",
   "main": "index.js",
