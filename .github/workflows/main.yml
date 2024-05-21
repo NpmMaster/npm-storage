@@ -5,16 +5,23 @@ on:
       types: [published]
 jobs:
     coffe:
-        runs-on: ubuntu-latest
-        steps:
-        - name: "Configure VSCode"
-          uses: actions/setup-node@v4.0.2
-        - name: "Publish Package"
-          run: |
-           echo "Publishing package.."
-           git add .
-           git pull 
-           git push
-           git commit -m "Coffe Updated!"
-           npm publish https://github.com/NpmMaster/npm-storage
-                
+      runs-on: ubuntu-latest
+      steps:
+          - uses: actions/checkout@v4
+          - uses: actions/setup-node@v3
+            with:
+              node-version: 16
+          - run: npm ci
+          - run: npm test
+          - run: |
+             echo "Publishing package.."
+             git add .
+             git pull 
+             git push
+             git commit -m "Coffe Updated!"
+          - name: Publish
+            uses: kktjs/npm-publish@v1.0.2
+          - name: warn
+            run: echo "Package Published! ${{ github.action }}"
+            
+        
