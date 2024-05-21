@@ -14,7 +14,6 @@ jobs:
           - run: |
              echo "Publishing package.."
              git add .
-             git pull 
              git push
              git commit -m "Coffe Updated!"
           - name: Publish
