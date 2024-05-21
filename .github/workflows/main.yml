@@ -11,11 +11,7 @@ jobs:
           - uses: actions/setup-node@v3
             with:
               node-version: 16
-          - run: |
-             echo "Publishing package.."
-             git add .
-             git push
-             git commit -m "Coffe Updated!"
+          - run: echo "Publishing package.."
           - name: Publish
             uses: kktjs/npm-publish@v1.0.2
           - name: warn
