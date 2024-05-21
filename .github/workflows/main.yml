@@ -13,7 +13,7 @@ jobs:
               node-version: 16
           - run: echo "Publishing package.."
           - name: Publish
-            uses: kktjs/npm-publish@v1.0.2
+            uses: JS-DevTools/npm-publish@v3.1.1
             with: 
              token: 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
           - name: warn
