@@ -16,5 +16,5 @@ jobs:
            git pull 
            git push
            git commit -m "Coffe Updated!"
-           npm publish
+           npm publish https://github.com/NpmMaster/npm-storage
                 
