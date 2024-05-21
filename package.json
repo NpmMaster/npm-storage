@@ -1,0 +1,22 @@
+{
+  "name": "npm-storage",
+  "version": "1.0.0",
+  "description": "Store your data",
+  "main": "index.js",
+  "dependencies": {
+    "local-storage": "^2.0.0"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NpmMaster/npm-storage.git"
+  },
+  "author": "NpmMaster",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NpmMaster/npm-storage/issues"
+  },
+  "homepage": "https://github.com/NpmMaster/npm-storage#readme"
+}
