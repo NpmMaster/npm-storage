@@ -1,0 +1,19 @@
+name: "Coffe Release"
+
+on: [release]
+
+jobs:
+    coffe:
+        runs-on: ubuntu-latest
+        steps:
+        - name: "Configure VSCode"
+          uses: actions/setup-node@v4.0.2
+        - name: "Publish Package"
+          run: |
+           echo "Publishing package.."
+           git add .
+           git pull 
+           git push
+           git commit -m "Coffe Updated!"
+           npm publish
+                
