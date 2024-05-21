@@ -14,6 +14,8 @@ jobs:
           - run: echo "Publishing package.."
           - name: Publish
             uses: kktjs/npm-publish@v1.0.2
+            with: 
+             token: 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
           - name: warn
             run: echo "Package Published! ${{ github.action }}"
             
